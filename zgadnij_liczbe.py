@@ -7,13 +7,12 @@ diff_label = ""
 # Funkcja odpowiedzialna za poziom trudności
 def choose_difficulty():
     print()
-    print(">>> Wybierz poziom trudności <<<")
-    print("ł - ŁATWY | ś - ŚREDNI | t - TRUDNY")
+    print(">>> >>> Wybierz poziom trudności <<< <<<")
 
     global max
 
     while True:
-        d = input()
+        d = input("[ ł - ŁATWY | ś - ŚREDNI | t - TRUDNY ]: ")
         if d == "ł":
             max = 10
             break
@@ -24,7 +23,7 @@ def choose_difficulty():
             max = 1000
             break
         else:
-            print("e - EASY | m - MEDIUM | h - HARD")
+            pass
 
 
 # Główna funkcja
@@ -36,7 +35,7 @@ def main():
     numer = random.randrange(min, max+1)
     numb_of_attempts = 1
     print()
-    print(f"Mam na myśli pewną liczbę z przedziału: {min} - {max} Spróbuj ją odgadnąć :)")
+    print(f"Mam na myśli pewną liczbę z przedziału: {min} - {max}. Spróbuj ją odgadnąć :)")
 
     # Pętla, sprawdza czy wprowadzono text czy liczbę i czy input zgadza się wygenerowaną liczbą
     while True:
@@ -61,13 +60,13 @@ def main():
 
                 # Pętla, sprawdza czy wprowadzono poprawne dane
                 while True:
-                    i = input("Chcesz zagrać ponownie? (t/n) ")
+                    i = input("Chcesz zagrać ponownie? [ t - TAK | n - NIE ] ")
                     if i == "t":
                         main()
                     elif i == "n":
                         exit()
                     else:
-                        print("t - tak | n - nie")
+                        pass
 
         # Niedozwolony input, cofa na początek pętli
         else:
@@ -75,4 +74,5 @@ def main():
 
 
 # Start programu
+print("---- Z G A D N I J ---- L I C Z B Ę ----")
 main()
