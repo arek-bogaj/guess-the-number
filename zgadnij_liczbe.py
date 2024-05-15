@@ -1,10 +1,37 @@
 import random
 min = 1
-max = 100
+max = 10
+diff_label = ""
+
+
+# Funkcja odpowiedzialna za poziom trudności
+def choose_difficulty():
+    print()
+    print(">>> Wybierz poziom trudności <<<")
+    print("ł - ŁATWY | ś - ŚREDNI | t - TRUDNY")
+
+    global max
+
+    while True:
+        d = input()
+        if d == "ł":
+            max = 10
+            break
+        elif d == "ś":
+            max = 100
+            break
+        elif d == "t":
+            max = 1000
+            break
+        else:
+            print("e - EASY | m - MEDIUM | h - HARD")
 
 
 # Główna funkcja
 def main():
+    # Wybieranie poziomu trudności
+    choose_difficulty()
+
     # Generowanie losowej liczby i zerowanie licznika podjętych prób
     numer = random.randrange(min, max+1)
     numb_of_attempts = 1
