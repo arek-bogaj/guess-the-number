@@ -4,13 +4,30 @@ import random
 import en
 import pl
 
-# Domyślna paczka językowa
-txt = en.txt
-
 
 min = 1
 max = 10
+txt = ""
 diff_label = ""
+
+
+# Funkcja odpowiedzialna za wybór języka i wyświetlenie tytułu
+def start():
+    global txt
+    while True:
+        i = input("[ en - ENGLISH | pl - POLSKI ]: ")
+        if i == "en":
+            txt = en.txt
+            break
+        elif i == "pl":
+            txt = pl.txt
+            break
+        else:
+            pass
+
+    # Tytuł
+    print()
+    print(txt[0])
 
 
 # Funkcja odpowiedzialna za poziom trudności
@@ -22,13 +39,13 @@ def choose_difficulty():
 
     while True:
         d = input(txt[2])
-        if d == "ł":
+        if txt == pl.txt and d == "ł" or txt == en.txt and d == "e":
             max = 10
             break
-        elif d == "ś":
+        elif txt == pl.txt and d == "ś" or txt == en.txt and d == "m":
             max = 100
             break
-        elif d == "t":
+        elif txt == pl.txt and d == "t" or txt == en.txt and d == "h":
             max = 1000
             break
         else:
@@ -83,5 +100,5 @@ def main():
 
 
 # Start programu
-print(txt[0])
+start()
 main()
