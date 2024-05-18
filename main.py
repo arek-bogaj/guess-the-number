@@ -87,16 +87,25 @@ def main():
                 # Pętla, sprawdza czy wprowadzono poprawne dane
                 while True:
                     i = input(txt[12])
-                    if i == "t":
+                    if txt == pl.txt and i == "t" or txt == en.txt and i == "y":
                         main()
                     elif i == "n":
+                        print()
+                        print(txt[15])
                         exit()
                     else:
                         pass
 
         # Niedozwolony input, cofa na początek pętli
         else:
-            print(txt[13])
+            try:
+                if int(i) < 0:
+                    print(txt[6])
+                else:
+                    print(txt[13])
+            except:
+                print(txt[14])
+
 
 
 # Start programu

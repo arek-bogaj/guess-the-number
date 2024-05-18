@@ -1,18 +1,20 @@
-# English language
+#------------------------------ENGLISH----------------------------#
 
 txt = [
-    "-- G U E S S - T H E - N U M B E R --",
-    ">>> >> Choose your difficulty << <<<",
-    "[ e - EASY | m - MEDIUM | h - HARD ]: ",
-    "I mean certain number from",
-    "to",
-    "Try to guess it :)",
-    "Number out of range!",
-    "<<< Too big! Try again.",
-    ">>> Too small! Try again.",
-    "GREAT! I meant the number",
-    "You got it right the",
-    "time.",
-    "Do you want to play again? [ y - YES | n - NO ]: ",
-    "It's not a number :("
+    "-- G U E S S - T H E - N U M B E R --",# <---------------- [0]
+    ">>> >> Choose your difficulty << <<<",# <----------------- [1]
+    "[ e - EASY | m - MEDIUM | h - HARD ]: ",# <--------------- [2]
+    "I mean certain number from",# <--------------------------- [3]
+    "to",# <--------------------------------------------------- [4]
+    "Try to guess it :)",# <----------------------------------- [5]
+    "Number out of range!",# <--------------------------------- [6]
+    "<<< Too big! Try again.",# <------------------------------ [7]
+    ">>> Too small! Try again.",# <---------------------------- [8]
+    "GREAT! I meant the number",# <---------------------------- [9]
+    "You got it right the",# <-------------------------------- [10]
+    "time.",# <----------------------------------------------- [11]
+    "Do you want to play again? [ y - YES | n - NO ]: ",# <--- [12]
+    "It's not a number :(",# <-------------------------------- [13]
+    "Input not allowed!",# <---------------------------------- [14]
+    "Thanks for the game :)"# <------------------------------- [15]
 ]

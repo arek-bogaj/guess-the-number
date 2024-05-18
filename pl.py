@@ -1,18 +1,20 @@
-# Język polski
+#-----------------------------POLSKI----------------------------#
 
 txt = [
-    "---- Z G A D N I J ---- L I C Z B Ę ----",
-    ">>> >>> Wybierz poziom trudności <<< <<<",
-    "[ ł - ŁATWY | ś - ŚREDNI | t - TRUDNY ]: ",
-    "Mam na myśli pewną liczbę z przedziału od",
-    "do",
-    "Spróbuj ją odgadnąć :)",
-    "Liczba spoza przedziału!",
-    "<<< Za duża! Spóbuj ponownie.",
-    ">>> Za mała! Spóbuj ponownie.",
-    "ŚWIETNIE! Miałem na myśli liczbę",
-    "Udało ci się za",
-    "razem.",
-    "Chcesz zagrać ponownie? [ t - TAK | n - NIE ]: ",
-    "To nie jest liczba :("
+    "---- Z G A D N I J ---- L I C Z B Ę ----",# <----------- [0]
+    ">>> >>> Wybierz poziom trudności <<< <<<",# <----------- [1]
+    "[ ł - ŁATWY | ś - ŚREDNI | t - TRUDNY ]: ",# <---------- [2]
+    "Mam na myśli pewną liczbę z przedziału od",# <---------- [3]
+    "do",# <------------------------------------------------- [4]
+    "Spróbuj ją odgadnąć :)",# <----------------------------- [5]
+    "Liczba spoza przedziału!",# <--------------------------- [6]
+    "<<< Za duża! Spóbuj ponownie.",# <---------------------- [7]
+    ">>> Za mała! Spóbuj ponownie.",# <---------------------- [8]
+    "ŚWIETNIE! Miałem na myśli liczbę",# <------------------- [9]
+    "Udało ci się za",# <----------------------------------- [10]
+    "razem.",# <-------------------------------------------- [11]
+    "Chcesz zagrać ponownie? [ t - TAK | n - NIE ]: ",# <--- [12]
+    "To nie jest liczba :(",# <----------------------------- [13]
+    "Dane niedozwolone!",# <-------------------------------- [14]
+    "Dzięki za grę :)"# <----------------------------------- [15]
 ]
